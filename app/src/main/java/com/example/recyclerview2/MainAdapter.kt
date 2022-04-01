@@ -25,6 +25,8 @@ class MainAdapter(private val videos: Array<JSONObject>): RecyclerView.Adapter<M
             binding.tvVideoTitle.setText(video.getString("views", ))
             binding.tvVideoTitle.setText(video.getString("datePosted", ))
             binding.tvVideoTitle.setText(video.getString("duration", ))
+            binding.ivVideoThumbnail.setImageResource(R.drawable.video_placeholder)
+            binding.ivAvatar.setImageResource(R.drawable.avatar_placeholder)
         }
     }
 }
